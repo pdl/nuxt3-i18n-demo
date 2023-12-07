@@ -1,10 +1,21 @@
 export default {
-  legacy: false,
+  lazy: true,
+  langDir: "locales",
+  defaultLocale: "en",
+  locales: [
+    {
+      name: "English",
+      code: "en",
+      iso: "en-GB",
+      file: "en.json",
+    },
+    {
+      name: "Français",
+      code: "fr",
+      iso: "fr-FR",
+      file: "fr.json",
+    },
+  ],
+  strategy: "prefix",
   detectBrowserLanguage: false,
-  strategy: 'prefix',
-  defaultLocale: 'en',
-  messages: {
-    en: { greeting:'Hello' },
-    fr: { greeting:'Bonjour' }
-  }
 }
